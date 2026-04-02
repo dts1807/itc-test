@@ -1,36 +1,48 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+ITC Technical Challenge
 
-## Getting Started
+A Pokemon listing application built with **Next.js 16 (App Router)**, demonstrating the core differences between **Server-Side Rendering (SSR)** and **Client-Side Rendering (CSR)** with advanced filtering and pagination.
 
-First, run the development server:
+## 🚀 Tech Stack
+
+* **Framework:** [Next.js 16](https://nextjs.org/) (App Router)
+* **Language:** [TypeScript](https://www.typescriptlang.org/) (Strictly Typed)
+* **Styling:** [Tailwind CSS v4](https://tailwindcss.com/) (CSS-first approach)
+* **Data Fetching:** [TanStack Query v5](https://tanstack.com/query/latest) (React Query)
+* **Image Optimization:** `next/image` with custom loading states and Shimmer effects.
+
+---
+
+## ⏱️ Development Timeline
+
+The project was completed in approximately **4 hours and 30 minutes**.
+
+| Phase | Duration | Description |
+| :--- | :--- | :--- |
+| **Requirements Analysis** | 30 mins | Analyzing user stories, defining CSR vs SSR scope, and planning the data flow. |
+| **API Research** | 30 mins | Deep dive into [PokeAPI.co](https://pokeapi.co/) documentation to handle filtering and pagination logic. |
+| **Boilerplate & Structure** | 30 mins | Initializing the project, configuring Tailwind v4, and setting up the Service Layer architecture. |
+| **Core Implementation** | 3 hours | Developing API services, reusable UI components, and the dual-rendering pages (CSR/SSR). |
+| **Total Time** | **4h 30m** | |
+
+---
+
+## 🛠️ Key Features
+
+### Hybrid Rendering Strategy
+* **/pokemon**: Uses **Client-Side Rendering (CSR)** with React Query for a seamless, app-like experience with instant feedback.
+* **/pokemon-ssr**: Uses **Server-Side Rendering (SSR)** for superior SEO and fast initial page loads, utilizing Next.js Server Components.
+
+---
+
+## 📦 Getting Started
+First, install dependencies
+```bash
+yarn install
+```
+Then, run the development server:
 
 ```bash
-npm run dev
-# or
 yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
